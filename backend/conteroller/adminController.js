@@ -131,3 +131,11 @@ const deleteUser = async (req, res, next) => {
     next(new ErrorResponse(error.message || "Server xatosi", 500));
   }
 };
+
+module.exports = {
+  deleteUser,
+  getUsers,
+  getAnalytics,
+  kursniTasdiqlash,
+  updateUserRole,
+};
